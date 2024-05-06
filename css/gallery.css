@@ -6,7 +6,7 @@
   background-color: white;
   width: 100%;
   z-index: 10;
-  height: 870px;
+  min-height: 870px;
   filter: drop-shadow(5px 5px 10px #00000070);
   scroll-margin-top: 100px;
   display: flex;
