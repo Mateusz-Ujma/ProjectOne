@@ -48,7 +48,6 @@ nav {
  height: 60px;
  font-size: var(--font-big);
  color: aliceblue;
- /* margin-top: -60px; */
  z-index: 1000;
  text-shadow: 3px 2px 4px rgb(255, 255, 255, 0.2);
 }
@@ -78,12 +77,12 @@ nav>ul {
 
  nav {
   width: 100vw;
-  justify-content: baseline;
+  justify-content: center;
   align-items: center;
   height: 60px;
   font-size: var(--font-big);
   color: aliceblue;
-  /* margin-top: -60px; */
+
   z-index: 1000;
   text-shadow: 3px 2px 4px rgb(255, 255, 255, 0.2);
  }
