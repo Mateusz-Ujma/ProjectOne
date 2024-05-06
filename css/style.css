@@ -72,7 +72,7 @@ nav>ul {
   align-items: center;
   margin-right: 9px;
   color: aliceblue;
-  font-size: var(--font-smaller);
+  font-size: var(--font-sm);
  }
 
  nav {
@@ -82,7 +82,6 @@ nav>ul {
   height: 60px;
   font-size: var(--font-big);
   color: aliceblue;
-
   z-index: 1000;
   text-shadow: 3px 2px 4px rgb(255, 255, 255, 0.2);
  }

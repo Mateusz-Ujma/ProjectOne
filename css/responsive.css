@@ -81,6 +81,37 @@
   width: 100%;
   object-fit: cover;
  }
+
+ .gallery-container {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  transform: translate(-50%, 0);
+  /* mnożymy przez liczbę zdjęć * 2 */
+  width: calc(400px*14);
+  display: flex;
+  perspective: 400px;
+  animation: scroll 30s linear infinite;
+ }
+
+ .gallery-container:hover {
+  animation-play-state: none
+ }
+
+ .gallery-img:hover {
+  transform: scale3d(100%, 100%, 100%);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  z-index: 11;
+ }
+
+ .gallery-img {
+  width: 350px;
+  height: 500px;
+  object-fit: cover;
+  margin: 20px 10px 0 10px;
+  border-radius: 5px;
+
+ }
 }
 
 @media screen and (max-width: 680px) {
