@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script defer type="module" src="/js/main.js"></script>
+  <script defer type="module" src="/js/gallery.js"></script>
+  <script defer type="module" src="/js/bgImage.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script defer type="module" src="/js/map.js"></script>
+  <script defer>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
+      ({ key: "AIzaSyC2Griztzl5YH-fEEhJ4zMBfr7BGcAaR5E", v: "weekly" });</script>
+
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    LOGO
+    <ul>
+      <li><a href="#home-view">Główna</a></li>
+      <li><a href="#gallery-view">Galeria</a></li>
+      <li><a href="#about-view">O nas</a></li>
+      <li><a href="#prices-list-view">Cennik</a></li>
+      <li><a href="#contact-view">Kontakt</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="bg-images">
+      <img class="img-bg" src="/images/hair1.jpg" alt="women hair cut">
+      <img class="img-bg" src="/images/hair2.jpg" alt="women hair cut">
+      <img class="img-bg" src="/images/hair3.jpg" alt="women hair cut">
+    </div>
+    <div id="home-view" class="home">
+      <p class="home-text">Witaj w tym miejscu pojawi się tekst który będziesz chciał umieścić w tym miejscu reszta
+        tekstu
+        to tzw. lorem ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo beatae fugit quisquam fuga
+        enim
+        quos labore vel ea. Et quae sequi omnis eum assumenda nobis reprehenderit accusamus incidunt. Perferendis,
+        accusamus!
+      </p>
+      <p class="home-logo-text">TWOJA NAZWA</p>
+      <div class="decor-home-1"></div>
+      <div class="decor-home-2"></div>
+    </div>
+    <div id="gallery-view" class="gallery">
+      <p class="main-text">Galeria</p>
+      <div class="gallery-container"></div>
+      <div class="decor-gal-1"></div>
+      <div class="decor-gal-2"></div>
+      <div class="decor-gal-3"></div>
+      <div class="decor-gal-4"></div>
+    </div>
+    <div id="about-view" class="about">
+      <p class="main-text">O nas</p>
+      <p class="about-content"><strong>Tutaj tekst opisujący zespół/działalność oraz inne ciekawe rzeczy na temat
+          firmy.</strong>
+        Lorem
+        ipsum dolor sit, amet consectetur adipisicing elit. Temporibus quos voluptatum porro
+        illum architecto dolor nemo! Autem aliquam tenetur repudiandae, beatae, soluta vero cumque dignissimos dolor
+        nisi
+        rerum, officiis doloremque.
+        Sequi nulla hic necessitatibus similique fugit mollitia amet commodi itaque, quos iure quibusdam molestiae,
+        omnis
+        ratione blanditiis. Delectus aspernatur quo harum unde commodi ipsam voluptatum, aliquam consectetur accusamus
+        rerum
+        sunt?
+        Iusto iure cum placeat asperiores? Consequatur ea harum nemo quaerat, inventore labore impedit voluptatum
+        expedita
+        placeat commodi consectetur perspiciatis pariatur magni reiciendis voluptas deserunt doloribus dignissimos at ad
+        velit numquam.</p>
+      <div class="staff-container">
+        <div class="staff"><img src="/images/hair3.jpg" alt="">
+          <p class="satff-name">Anna Kowalska Szefowa/Fryzjerka</p>
+        </div>
+        <div class="staff"><img src="/images/gallery6.jpg" alt="">
+          <p class="satff-name">Justyna Nowak Fryzjerka</p>
+        </div>
+        <div class="staff"><img src="/images/gallery3.jpg" alt="">
+          <p class="satff-name">Jan Kowalski Barber</p>
+        </div>
+        <div class="staff"><img src="/images/gallery7.jpg" alt="">
+          <p class="satff-name">Wioletta Mazurek Fryzjerka</p>
+        </div>
+      </div>
+      <div class="decor-about-1"></div>
+      <div class="decor-about-2"></div>
+      <div class="decor-about-3"></div>
+      <div class="decor-about-4"></div>
+    </div>
+    <div id="prices-list-view" class="prices-list">
+      <p class="main-text">Cennik</p>
+      <table>
+        <caption>Damskie</caption>
+        <thead>
+          <tr>
+            <th>Usługa</th>
+            <th>Cena</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Strzyżenie</td>
+            <td>80 zł</td>
+          </tr>
+          <tr>
+            <td>Stylizacja włosów</td>
+            <td>100 zł</td>
+          </tr>
+          <tr>
+            <td>Farbowanie zwykłe</td>
+            <td>200 zł</td>
+          </tr>
+          <tr>
+            <td>Farbowanie z refleksami</td>
+            <td>250 zł</td>
+          </tr>
+          <tr>
+            <td>Balejaż</td>
+            <td>180 zł</td>
+          </tr>
+          <tr>
+            <td>Czesanie</td>
+            <td>130 zł</td>
+          </tr>
+          <tr>
+            <td>Upęcia</td>
+            <td>170 zł</td>
+          </tr>
+          <tr>
+            <td>Specjalistyczny zabieg pielęgnacyjno – regenerujący</td>
+            <td>300 zł</td>
+          </tr>
+        </tbody>
+      </table>
+      <table>
+        <caption>Męskie</caption>
+        <thead>
+          <tr>
+            <th>Usługa</th>
+            <th>Cena</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Strzyżenie</td>
+            <td>70 zł</td>
+          </tr>
+          <tr>
+            <td>Farbowanie</td>
+            <td>130 zł</td>
+          </tr>
+          <tr>
+            <td>Układanie włosów
+            </td>
+            <td>50 zł</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="decor-price-1"></div>
+      <div class="decor-price-2"></div>
+      <div class="decor-price-3"></div>
+      <div class="decor-price-4"></div>
+    </div>
+    <div id="contact-view" class="contact">
+      <p class="main-text">Kontakt</p>
+      <div class="container-contact">
+        <div class="container-contact-section">
+          <p>Telefon: 883 882 823</p>
+          <p>Email: mail@gmail.com</p>
+          <p>Adres: Sezamkowa 32/3 lok.3 <br>03-001 Warszawa</p>
+        </div>
+        <div id="map"></div>
+      </div>
+      <div class="decor-contact-1"></div>
+      <div class="decor-contact-2"></div>
+    </div>
+  </main>
+  <footer>Wykonanie: Mateusz Ujma 2024</footer>
+  <div class="px"></div>
+</body>
+
+</html>

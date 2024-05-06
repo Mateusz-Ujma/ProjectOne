@@ -1,0 +1,81 @@
+@import url('/css/root.css');
+@import url('/css/home.css');
+@import url("/css/bg-images.css");
+@import url("/css/gallery.css");
+@import url("/css/about.css");
+@import url("/css/priceList.css");
+@import url("/css/contact.css");
+@import url('/css/responsive.css');
+
+html {
+ scroll-behavior: smooth;
+}
+
+body {
+ font-family: "Roboto Slab", serif;
+ font-optical-sizing: auto;
+ font-weight: 500;
+ font-style: normal;
+ letter-spacing: 1px;
+}
+
+a {
+ text-decoration: none;
+ color: white;
+}
+
+a:hover {
+ text-decoration: none;
+ color: white;
+ text-shadow: 3px 2px 4px rgba(255, 255, 255, 0.555);
+ font-size: 1.61rem
+}
+
+::-webkit-scrollbar {
+ width: 0;
+}
+
+nav {
+ position: fixed;
+ width: 100%;
+ background-color: var(--nav-bg);
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ height: 60px;
+ font-size: var(--font-big);
+ color: aliceblue;
+ margin-top: -60px;
+ z-index: 1000;
+ text-shadow: 3px 2px 4px rgb(255, 255, 255, 0.2);
+}
+
+nav>ul {
+ display: flex;
+ flex-direction: row;
+ gap: 30px;
+ justify-content: end;
+ align-items: center;
+ margin-right: 13px;
+ color: aliceblue;
+ font-size: var(--font-normal);
+}
+
+@media screen and (max-width: 700px) {
+ nav>ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: end;
+  align-items: center;
+  margin-right: 9px;
+  color: aliceblue;
+  font-size: var(--font-smaller);
+ }
+}
+
+main {
+ margin-top: 58px;
+ z-index: 3;
+}

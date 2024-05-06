@@ -1,0 +1,10 @@
+.bg-images {
+ margin-top: -50px;
+ position: fixed;
+ z-index: -1;
+ opacity: .62;
+ display: flex;
+ height: 100vh;
+ flex-direction: row;
+ width: 100vw;
+}

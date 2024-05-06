@@ -1,0 +1,94 @@
+@media screen and (max-width: 1560px) {
+ .staff>img {
+  height: 300px;
+  width: 200px;
+  object-fit: cover;
+ }
+
+ .satff-name {
+  max-width: 180px;
+  font-size: var(--font-smaller);
+  letter-spacing: 1px;
+  line-height: 120%;
+ }
+}
+
+@media screen and (max-width: 1400px) {
+ .home {
+  flex-direction: column-reverse;
+  justify-content: center;
+  gap: 20px;
+ }
+
+ .home-text {
+  width: 80%;
+  font-size: var(--font-normal-big);
+  text-shadow: 3px 2px 4px rgba(66, 68, 90, .2);
+
+ }
+
+ .home-logo-text {
+  font-size: 5.5rem;
+  width: 50%;
+  text-shadow: 3px 2px 4px rgba(66, 68, 90, .2);
+  text-align: center;
+  max-width: 50%;
+ }
+
+ .container-contact-section {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--font-normal-big);
+  text-align: center;
+  line-height: 130%;
+ }
+
+ #map {
+  height: 400px;
+  width: 550px;
+ }
+
+ .container-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 80px;
+ }
+}
+
+@media screen and (max-width: 1200px) {
+ .img-bg {
+  width: 50%;
+  object-fit: cover;
+ }
+
+ #map {
+  height: 350px;
+  width: 450px;
+ }
+
+ .container-contact {
+  flex-direction: column;
+ }
+
+
+}
+
+@media screen and (max-width: 850px) {
+ .img-bg {
+  width: 100%;
+  object-fit: cover;
+ }
+}
+
+@media screen and (max-width: 680px) {
+ .home-logo-text {
+  font-size: 4rem;
+  width: 50%;
+  text-shadow: 3px 2px 4px rgba(66, 68, 90, .2);
+  text-align: center;
+  max-width: 50%;
+ }
+}
